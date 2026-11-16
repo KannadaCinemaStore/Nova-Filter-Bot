@@ -39,10 +39,10 @@ BOT_ID = BOT_TOKEN.split(":")[0]
 PORT = int(environ.get('PORT', '80'))
 
 # Upload your images to "postimages.org" and get direct link
-PICS = (environ.get('PICS', 'https://i.postimg.cc/8C15CQ5y/1.png https://i.postimg.cc/gcNtrv0m/2.png https://i.postimg.cc/cHD71BBz/3.png https://i.postimg.cc/F1XYhY8q/4.png https://i.postimg.cc/1tNwGVxC/5.png https://i.postimg.cc/dtW30QpL/6.png https://i.postimg.cc/139dvs3c/7.png https://i.postimg.cc/QtXVtB8K/8.png https://i.postimg.cc/y8j8G1XV/9.png https://i.postimg.cc/zDF6KyJX/10.png https://i.postimg.cc/fyycVqzd/11.png https://i.postimg.cc/26ZBtBZr/13.png https://i.postimg.cc/PJn8nrWZ/14.png https://i.postimg.cc/cC7txyhz/15.png https://i.postimg.cc/kX9tjGXP/16.png https://i.postimg.cc/zXjH4NVb/17.png https://i.postimg.cc/sggGrLhn/18.png https://i.postimg.cc/y8pgYTh7/19.png')).split()
+PICS = (environ.get('PICS', 'https://i.ibb.co/hJHq3jZF/1e70bf0e-8312-4557-8fda-a9bb96b9c446.jpg')).split()
 
 # Bot Admins
-ADMINS = environ.get('ADMINS', '5493832202')
+ADMINS = environ.get('ADMINS', '5466885993')
 if len(ADMINS) == 0:
     logger.error('ADMINS is missing, exiting now')
     exit()
@@ -53,20 +53,20 @@ else:
 INDEX_CHANNELS = [int(index_channels) if index_channels.startswith("-") else index_channels for index_channels in environ.get('INDEX_CHANNELS', '').split()]
 if len(INDEX_CHANNELS) == 0:
     logger.info('INDEX_CHANNELS is empty')
-LOG_CHANNEL = environ.get('LOG_CHANNEL', '')
+LOG_CHANNEL = environ.get('LOG_CHANNEL', '-1001913629397')
 if len(LOG_CHANNEL) == 0:
     logger.error('LOG_CHANNEL is missing, exiting now')
     exit()
 else:
     LOG_CHANNEL = int(LOG_CHANNEL)
-UPDATES_SEND_CHANNEL = environ.get('UPDATES_SEND_CHANNEL', '')
+UPDATES_SEND_CHANNEL = environ.get('UPDATES_SEND_CHANNEL', '-1001913629397')
 if len(UPDATES_SEND_CHANNEL) == 0:
     logger.info('UPDATES_SEND_CHANNEL is missing')
     UPDATES_SEND_CHANNEL = None
 else:
     UPDATES_SEND_CHANNEL = int(UPDATES_SEND_CHANNEL)
 
-REQUESTS_CHANNEL = environ.get('REQUESTS_CHANNEL', '')
+REQUESTS_CHANNEL = environ.get('REQUESTS_CHANNEL', '-1001913629397')
 if len(REQUESTS_CHANNEL) == 0:
     logger.info('REQUESTS_CHANNEL is missing, using LOG_CHANNEL')
     REQUESTS_CHANNEL = LOG_CHANNEL
@@ -74,7 +74,7 @@ else:
     REQUESTS_CHANNEL = int(REQUESTS_CHANNEL)
 
 # support group
-SUPPORT_GROUP = environ.get('SUPPORT_GROUP', '')
+SUPPORT_GROUP = environ.get('SUPPORT_GROUP', '-1002354474086')
 if len(SUPPORT_GROUP) == 0:
     SUPPORT_GROUP = None
     logger.warning('SUPPORT_GROUP is missing')
