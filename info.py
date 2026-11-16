@@ -145,7 +145,7 @@ FORCE_SUB_CHANNELS = environ.get('FORCE_SUB_CHANNELS', '-1002317257466')  # For 
 REQUEST_FORCE_SUB_CHANNEL = environ.get('REQUEST_FORCE_SUB_CHANNEL', '-1002317257466')  # For multiple channels, separate channel IDs with spaces. Example: "-100xxxxx -100xxxxx -100xxxxx"
 
 # for stream
-IS_STREAM = is_enabled('IS_STREAM', True)
+IS_STREAM = is_enabled('IS_STREAM', False)
 BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1001913629397")
 if len(BIN_CHANNEL) == 0:
     logger.error('BIN_CHANNEL is missing, exiting now')
