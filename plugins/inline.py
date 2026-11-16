@@ -86,6 +86,6 @@ def get_reply_markup(s):
         InlineKeyboardButton('🔎 Search Again', switch_inline_query_current_chat=s or '')
     ],[
         InlineKeyboardButton('📢 Updates Channel', url=UPDATES_LINK),
-        InlineKeyboardButton('💬 Support Group', url=SUPPORT_LINK)
+        InlineKeyboardButton('💎 Buy Premium', url=f"https://t.me/{temp.U_NAME}?start=premium")
     ]]
     return InlineKeyboardMarkup(buttons)
