@@ -298,13 +298,11 @@ async def next_page(bot, query):
 
     if settings['shortlink'] and not await is_premium(query.from_user.id, bot):
         btn.insert(2,
-            [InlineKeyboardButton("⚡ Send All", url=await get_shortlink(settings['url'], settings['api'], f'https://t.me/{temp.U_NAME}?start=all_{query.message.chat.id}_{key}')),
-             InlineKeyboardButton(settings['tutorial_name'], url=settings['tutorial'])]
+             [InlineKeyboardButton(settings['tutorial_name'], url=settings['tutorial'])]
         )
     else:
         btn.insert(2,
-            [InlineKeyboardButton("⚡ Send All", callback_data=f"send_all#{key}#{req}"),
-             InlineKeyboardButton(settings['tutorial_name'], url=settings['tutorial'])]
+             [InlineKeyboardButton(settings['tutorial_name'], url=settings['tutorial'])]
         )
     btn.append(
         [InlineKeyboardButton('💎 Buy Premium', url=f"https://t.me/{temp.U_NAME}?start=premium")]
@@ -970,13 +968,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("➕ Add Me To Your Group", url=f'http://t.me/{temp.U_NAME}?startgroup=start', style=enums.ButtonStyle.PRIMARY)
         ],[
             InlineKeyboardButton('📢 Updates', url=UPDATES_LINK),
-            InlineKeyboardButton('💬 Support', url=SUPPORT_LINK)
+            InlineKeyboardButton('💎 Buy Premium', url=f"https://t.me/{temp.U_NAME}?start=premium")
         ],[
             InlineKeyboardButton('💡 Help', callback_data='help'),
             InlineKeyboardButton('ℹ️ About', callback_data='about')
-        ],[
-            InlineKeyboardButton('💎 Buy Premium', url=f"https://t.me/{temp.U_NAME}?start=premium"),
-            InlineKeyboardButton('🔍 Search Inline', switch_inline_query_current_chat=''),
         ],[
             InlineKeyboardButton('🎬 Popular Movies', url="https://www.themoviedb.org/movie"),
             InlineKeyboardButton('📺 Popular TV Shows', url="https://www.themoviedb.org/tv")
@@ -1692,13 +1687,11 @@ async def auto_filter(client, msg, s, spoll=False):
 
     if settings['shortlink'] and not await is_premium(message.from_user.id, client):
         btn.insert(2,
-            [InlineKeyboardButton("⚡ Send All", url=await get_shortlink(settings['url'], settings['api'], f'https://t.me/{temp.U_NAME}?start=all_{message.chat.id}_{key}')),
-             InlineKeyboardButton(settings['tutorial_name'], url=settings['tutorial'])]
+            [InlineKeyboardButton(settings['tutorial_name'], url=settings['tutorial'])]
         )
     else:
         btn.insert(2,
-            [InlineKeyboardButton("⚡ Send All", callback_data=f"send_all#{key}#{req}"),
-             InlineKeyboardButton(settings['tutorial_name'], url=settings['tutorial'])]
+            [InlineKeyboardButton(settings['tutorial_name'], url=settings['tutorial'])]
         )
     btn.append(
         [InlineKeyboardButton('💎 Buy Premium', url=f"https://t.me/{temp.U_NAME}?start=premium")]
