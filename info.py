@@ -152,7 +152,7 @@ if len(BIN_CHANNEL) == 0:
     exit()
 else:
     BIN_CHANNEL = int(BIN_CHANNEL)
-URL = environ.get("URL", "https://relieved-phyllida-chayadevi-04753405.apps.mistral.run/")
+URL = environ.get("URL", "")
 if URL:
     if URL.startswith(('https://', 'http://')):
         if not URL.endswith("/"):
