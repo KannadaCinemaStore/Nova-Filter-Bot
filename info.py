@@ -103,50 +103,50 @@ if len(SECOND_FILES_DATABASE_URL) == 0:
 
 
 # Links
-SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/Nova_Filter_Official')
-UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/Nova_Filter_Official')
-FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/NovoFlix_Hub')
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/Nova_Filter_Official")
+SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/KannadaMagaaZone')
+UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/addlist/gwz-xLwcC7Q4YjJl')
+FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/addlist/gwz-xLwcC7Q4YjJl')
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/How_To_Open_Links_bypass")
 TUTORIAL_NAME = environ.get("TUTORIAL_NAME", "Tutorial")
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/Nova_Filter_Official")
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/How_To_Open_Links_bypass")
 
 # Bot settings
 TIME_ZONE = environ.get('TIME_ZONE', 'Asia/Colombo') # Replace your time zone
-DELETE_TIME = int(environ.get('DELETE_TIME', 3600)) # Add time in seconds
+DELETE_TIME = int(environ.get('DELETE_TIME', 300)) # Add time in seconds
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 MAX_BTN = int(environ.get('MAX_BTN', 8))
 LANGUAGES = [language.lower() for language in environ.get('LANGUAGES', 'hindi english telugu tamil kannada malayalam marathi punjabi').split()]
 QUALITY = [quality.lower() for quality in environ.get('QUALITY', '360p 480p 720p 1080p 2160p').split()]
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
 FILE_CAPTION = environ.get("FILE_CAPTION", script.FILE_CAPTION)
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "mdiskshortner.link")
-SHORTLINK_API = environ.get("SHORTLINK_API", "36f1ae74ba1aa01e5bd73bdd0bc22aa915443501")
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "")
+SHORTLINK_API = environ.get("SHORTLINK_API", "")
 VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
 INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 mkv').split()]
-PM_FILE_DELETE_TIME = int(environ.get('PM_FILE_DELETE_TIME', '3600'))
+PM_FILE_DELETE_TIME = int(environ.get('PM_FILE_DELETE_TIME', '58'))
 
 # boolean settings
 USE_CAPTION_FILTER = is_enabled('USE_CAPTION_FILTER', False)
 IS_VERIFY = is_enabled('IS_VERIFY', False)
-AUTO_DELETE = is_enabled('AUTO_DELETE', False)
-WELCOME = is_enabled('WELCOME', False)
+AUTO_DELETE = is_enabled('AUTO_DELETE', True)
+WELCOME = is_enabled('WELCOME', True)
 PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
 LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", False)
 LINK_MODE = is_enabled("LINK_MODE", True)
-IMDB = is_enabled('IMDB', True)
+IMDB = is_enabled('IMDB', False)
 SPELL_CHECK = is_enabled("SPELL_CHECK", True)
-SHORTLINK = is_enabled('SHORTLINK', False)
+SHORTLINK = is_enabled('SHORTLINK', True)
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 PM_SEARCH = is_enabled('PM_SEARCH', True)
 
 # bot string settings
-FORCE_SUB_CHANNELS = environ.get('FORCE_SUB_CHANNELS', '')  # For multiple channels, separate channel IDs with spaces. Example: "-100xxxxx -100xxxxx -100xxxxx"
-REQUEST_FORCE_SUB_CHANNEL = environ.get('REQUEST_FORCE_SUB_CHANNEL', '')  # For multiple channels, separate channel IDs with spaces. Example: "-100xxxxx -100xxxxx -100xxxxx"
+FORCE_SUB_CHANNELS = environ.get('FORCE_SUB_CHANNELS', '-1002317257466')  # For multiple channels, separate channel IDs with spaces. Example: "-100xxxxx -100xxxxx -100xxxxx"
+REQUEST_FORCE_SUB_CHANNEL = environ.get('REQUEST_FORCE_SUB_CHANNEL', '-1002317257466')  # For multiple channels, separate channel IDs with spaces. Example: "-100xxxxx -100xxxxx -100xxxxx"
 
 # for stream
 IS_STREAM = is_enabled('IS_STREAM', True)
-BIN_CHANNEL = environ.get("BIN_CHANNEL", "")
+BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1001913629397")
 if len(BIN_CHANNEL) == 0:
     logger.error('BIN_CHANNEL is missing, exiting now')
     exit()
@@ -171,16 +171,18 @@ EFFECT_IDS = [effect for effect in environ.get('EFFECT_IDS', '510484124575518058
 
 # for Premium 
 IS_PREMIUM = is_enabled('IS_PREMIUM', True)
-OWNER_USERNAME = environ.get("OWNER_USERNAME", "Hansaka_Anuhas")
-PAYMENT_QR_CODE = "https://i.postimg.cc/4xmm21x5/qr-code.jpg" # add your payment qr code link, like upi qr code or any crypto qr code link
-PAYMENT_ID = "mypayment@id"  # add your payment id like upi id or crypto address
+OWNER_USERNAME = environ.get("OWNER_USERNAME", "KannadaMagaaBot")
+PAYMENT_QR_CODE = "https://i.ibb.co/Q71Tn7V6/10ac8c2b-3b2b-4964-addc-d4d2e3ca30c6.jpg" # add your payment qr code link, like upi qr code or any crypto qr code link
+PAYMENT_ID = "DM: @KannadaMagaaBot"  # add your payment id like upi id or crypto address
 
 # Format -- Days: ['CURRENCY', Price]
 PREMIUM_PLANS = {
-    7: ['USD', 1], 
-    14: ['USD', 2],
-    30: ['USD', 3],
-    365: ['USD', 10]
+    30: ['Rs', 49], 
+    45: ['Rs', 69],
+    60: ['Rs', 89],
+    90: ['Rs', 119],
+    180: ['Rs', 199],
+    365: ['Rs', 349]
 }
 PAYMENT_TYPE = "UPI"  # can be changed to "Crypto (TRC20)" or "PayPal" or etc....
 
