@@ -86,7 +86,7 @@ DATA_DATABASE_URL = environ.get('DATA_DATABASE_URL', "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files') 
 FILES_DATABASE_URL = environ.get('FILES_DATABASE_URL', "")
 SECOND_FILES_DATABASE_URL = environ.get('SECOND_FILES_DATABASE_URL', "")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
+DATABASE_NAME = environ.get('DATABASE_NAME', "")
 
 if len(DATA_DATABASE_URL) == 0 and len(FILES_DATABASE_URL) == 0:
     logger.error('FILES_DATABASE_URL and DATA_DATABASE_URL are missing. You must provide at least one of them. Exiting now.')
