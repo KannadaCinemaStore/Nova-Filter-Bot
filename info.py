@@ -105,7 +105,7 @@ if len(SECOND_FILES_DATABASE_URL) == 0:
 # Links
 SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/KannadaMagaaZone')
 UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/addlist/gwz-xLwcC7Q4YjJl')
-FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/addlist/gwz-xLwcC7Q4YjJl')
+FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/KannadaMagaaZone')
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/How_To_Open_Links_bypass")
 TUTORIAL_NAME = environ.get("TUTORIAL_NAME", "Tutorial")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/How_To_Open_Links_bypass")
