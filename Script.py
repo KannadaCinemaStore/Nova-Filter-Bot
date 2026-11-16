@@ -18,8 +18,8 @@ class script(object):
 
     MY_OWNER_TXT = """👨‍💻 <b>Developer & Owner Details</b>
 
-<blockquote>🧑‍💻 <b>Lead Developer</b>: Hansaka Anuhas
-💬 <b>Telegram</b>: @Hansaka_Anuhas
+<blockquote>🧑‍💻 <b>Lead Developer</b>: ᴋᴀɴɴᴀᴅᴀᴍᴀɢᴀᴀ
+💬 <b>Telegram</b>: @KannadaMagaa
 🛠️ <b>Support</b>: Available 24/7 via Support Group</blockquote>"""
 
     STATUS_TXT = """📊 <b>Nova Filter System Diagnostics</b>
@@ -79,7 +79,7 @@ class script(object):
 🗣️ <b>Requested by</b>: {mention}
 ⚡ <b>Powered by</b>: <b>{group_title}</b>"""
 
-    FILE_CAPTION = """📁 <b>{file_name}</b>
+    FILE_CAPTION = """📁 <b>{file_caption}</b>
 
 <blockquote>⚠️ <i>Please click the ✖️ Close button below once you have saved or downloaded this file!</i></blockquote>"""
 
@@ -163,11 +163,11 @@ class script(object):
 • 👑 /myplan - Check your active premium status & expiry
 • 🖼️ /img_2_link - Upload an image to cloud & get URL</blockquote>"""
     
-    SOURCE_TXT = """📂 <b>Open Source Repository</b>
+    SOURCE_TXT = """📂 <b>Source Repository</b>
 
-<blockquote>🛠️ <b>Project</b>: Nova Auto Filter Bot
-🔗 <b>Repository</b>: <a href="https://github.com/xHansaka-Anuhas/Nova-Filter-Bot">GitHub Repo</a>
-🧑‍💻 <b>Lead Developer</b>: @Hansaka_Anuhas</blockquote>"""
+<blockquote>🛠️ <b>Project</b>: KannadaMagaa Auto Filter Bot
+🔗 <b>Repository</b>: <a href="KannadaMagaa.t.me">GitHub Repo</a>
+🧑‍💻 <b>Lead Developer</b>: @KannadaMagaa</blockquote>"""
 
 
     NEW_ADDED_TEMPLATE = """✅ <b>New Content Added</b>
